@@ -2,12 +2,17 @@
 
 #set heading(numbering: "1.")
 #set text(size: 14pt)
+#set quote(block: true)
+#show quote: set align(center)
+
+
 #show outline.entry.where(
   level: 1
 ): it => {
   v(12pt, weak: true)
   strong(it)
 }
+
 
 //header
 #page( footer:[#align(center, text(14pt)[2024г.])])[
@@ -160,7 +165,20 @@ $not(forall x in X (P(x)))$ - когда отрицание истенно?
 
 #quote()[
   При отрицании кванторов (), они заменяются на квантор (), а высказывание под кватнором отрицается
+\ \
+  $not (forall x in X (P(x)) = exists x in X(not P(x)))$
 ]
+\ \ 
+Запомнить так же, то что
+\
+$exists => >= 1$
+\
+$! = <= 1$
+\
+$exists ! => = 1$
+\
+
+
 ]
 
 
